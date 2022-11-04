@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "JdpO95fjh0jYFvWAyFORmMbc21vEGVSTJ6LTeRQWEw+EsynYjGwMu7L//z1UkIJzuolHLX9E/pXdohbS/w5Nfw==",
+  "success": true,
+  "projectFilePath": "F:\\Proyectos .Net\\Prueba-Tecnica-Aranda\\API_Catalog\\API_Catalog\\API_Catalog.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MAKIIA-PC04\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\MAKIIA-PC04\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\MAKIIA-PC04\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\MAKIIA-PC04\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\MAKIIA-PC04\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\MAKIIA-PC04\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
