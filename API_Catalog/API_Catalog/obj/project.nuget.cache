@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "slwLaZZTNudetVY9Z5rE3FmK97X+r/ixPK1FPAEGyJPKoMWV7FKvJp9/X0heHQro7Ki/ktdLrTXDLSDW6di2DQ==",
+  "dgSpecHash": "LRYuvZiiKrTGYFQ47KIbTHD4MlYZjXiPxk98TGetqZ25kTzRtUPgsUklETVz3vxma47Ai5YnY6Q/vBzCpRAIzw==",
   "success": true,
   "projectFilePath": "F:\\Proyectos .Net\\Prueba-Tecnica-Aranda\\API_Catalog\\API_Catalog\\API_Catalog.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MAKIIA-PC04\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\MAKIIA-PC04\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\MAKIIA-PC04\\.nuget\\packages\\awssdk.core\\3.7.100.9\\awssdk.core.3.7.100.9.nupkg.sha512",
+    "C:\\Users\\MAKIIA-PC04\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.100.9\\awssdk.dynamodbv2.3.7.100.9.nupkg.sha512",
     "C:\\Users\\MAKIIA-PC04\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\MAKIIA-PC04\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\MAKIIA-PC04\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

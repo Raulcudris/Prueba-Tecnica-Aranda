@@ -1,4 +1,5 @@
 using API_Catalog.Context;
+using API_Catalog.Utils;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -29,6 +30,9 @@ namespace API_Catalog
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAutoMapper(typeof(Startup));
+            services.AddSingleton<IStorageFile, Store_Local_File>();
+            services.AddHttpContextAccessor();
+
             services.AddControllers();
             services.AddCors();
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Connection")));
@@ -56,6 +60,7 @@ namespace API_Catalog
             }
 
             app.UseHttpsRedirection();
+            app.UseStaticFiles();
 
             app.UseRouting();
 

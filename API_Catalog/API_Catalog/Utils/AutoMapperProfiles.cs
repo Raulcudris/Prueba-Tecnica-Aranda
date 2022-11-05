@@ -18,8 +18,10 @@ namespace API_Catalog.Utils
             CreateMap<Categories, CategoriesDtos>().ReverseMap();
             CreateMap<CategoriesDtos, Categories>();
 
+            CreateMap<CreateProductsDtos, Products>()
+                .ForMember(m => m.Image, options => options.Ignore());                        
 
         }
-  
+
     }
 }
