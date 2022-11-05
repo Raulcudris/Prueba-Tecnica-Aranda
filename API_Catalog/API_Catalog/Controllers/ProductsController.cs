@@ -106,7 +106,6 @@ namespace API_Catalog.Controllers
 
             return NoContent();
 
-
         }
 
 
