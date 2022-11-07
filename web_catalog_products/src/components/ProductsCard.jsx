@@ -1,132 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import imageproduct1 from '../assets/img/cienanosdesoledad.jpg';
-import imageproduct2 from '../assets/img/HornoMicroonda.png';
-import imageproduct3 from '../assets/img/Guantes.jpg';
 import icons from '../assets/icons/bt_add_to_cart.svg';
+import '../styles/app.css';
 
-const productsCard = () => {
+const ProductsCard = () => {
+  const baseUrl = "https://localhost:44398/api/Products";
+  const [products,setProducts] = useState();
+
+  const fetchApi = async () =>{
+  const response = await fetch(baseUrl);
+  const responseJSON = await response.json();
+  setProducts(responseJSON);
+};
+useEffect(()=>{
+  fetchApi()
+},[]);
+
   return (
     <>
-      <section class="main-container">
-        <div class="cards-container">  
-          <div class="product-card">
-                <img src={imageproduct1} alt="" />
-                <div class="product-info">
+    {!products ? 'Cargando...' : 
+        products.map((products , index)=>{
+          return (
+           <div class="product-card">
+             <img src={products.image} alt="" />
+               <div class="product-info">
+                <p>{products.name}</p>
+                <p>{products.Description}</p>
                 <div>
-                    <p>$120,00</p>
-                    <p>$Libro</p>
-                </div>
-                <figure>
-                    <img src={icons} alt="card" />
-                </figure>
-            </div>
           </div>
-          <div class="product-card">
-            <img
-              src={imageproduct2} alt="" />
-                <div class="product-info">
-                     <div>
-                            <p>$500,00</p>
-                            <p>$Horno Microondas</p>
-                      </div>
-                <figure>
-                    <img src={icons} alt="card" />
-                </figure>
-             </div>
-          </div>
-          <div class="product-card">
-                <img src={imageproduct3} alt=""  />
-                <div class="product-info">
-                <div>
-                    <p>$5,00</p>
-                    <p>$Guantes</p>
-                </div>
-                <figure>
-                    <img src={icons} alt="card" />
-                </figure>
-            </div> 
-          </div>
+          <figure>
+              <img src={icons} alt="card" />
+          </figure>
+         </div>
+      </div>)
+        })
 
-          <div class="product-card">
-                <img src={imageproduct1} alt=""  />
-                <div class="product-info">
-                <div>
-                    <p>$5,00</p>
-                    <p>$Guantes</p>
-                </div>
-                <figure>
-                    <img src={icons} alt="card" />
-                </figure>
-            </div> 
-          </div>
-
-          <div class="product-card">
-                <img src={imageproduct2} alt=""  />
-                <div class="product-info">
-                <div>
-                    <p>$5,00</p>
-                    <p>$Guantes</p>
-                </div>
-                <figure>
-                    <img src={icons} alt="card" />
-                </figure>
-            </div> 
-          </div>
-
-          <div class="product-card">
-                <img src={imageproduct3} alt=""  />
-                <div class="product-info">
-                <div>
-                    <p>$5,00</p>
-                    <p>$Guantes</p>
-                </div>
-                <figure>
-                    <img src={icons} alt="card" />
-                </figure>
-            </div> 
-          </div>
-          <div class="product-card">
-                <img src={imageproduct1} alt=""  />
-                <div class="product-info">
-                <div>
-                    <p>$5,00</p>
-                    <p>$Guantes</p>
-                </div>
-                <figure>
-                    <img src={icons} alt="card" />
-                </figure>
-            </div> 
-          </div>
-          <div class="product-card">
-                <img src={imageproduct3} alt=""  />
-                <div class="product-info">
-                <div>
-                    <p>$5,00</p>
-                    <p>$Guantes</p>
-                </div>
-                <figure>
-                    <img src={icons} alt="card" />
-                </figure>
-            </div> 
-          </div>
-          <div class="product-card">
-                <img src={imageproduct1} alt=""  />
-                <div class="product-info">
-                <div>
-                    <p>$5,00</p>
-                    <p>$Guantes</p>
-                </div>
-                <figure>
-                    <img src={icons} alt="card" />
-                </figure>
-            </div> 
-          </div>
-
-
-        </div>       
-      </section>
-    </>
+    }
+    
+    </>   
   );
 };
 
-export default productsCard;
+export default ProductsCard;

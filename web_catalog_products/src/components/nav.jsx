@@ -13,25 +13,14 @@ const Nav = () => {
             <img src={logo} alt="logo" class="logo"/>
             <ul>
                 <li>
-                    <a href="/">All</a>
+                    <a href="/">Agregar Producto</a>
                 </li>
                 <li>
-                    <a href="/">Clothess</a>
+                    <a href="/">Categoria</a>
                 </li>
+                <br />
                 <li>
-                    <a href="/">Electronics</a>
-                </li>
-                <li>
-                    <a href="/">Furnitures</a>
-                </li>
-                <li>
-                    <a href="/">Toys</a>
-                </li>
-                <li>
-                    <a href="/">Others</a>
-                </li>
-                <li>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Buscar Producto.."/>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Buscar Producto.."/>
                 </li>
             </ul>
         </div>
