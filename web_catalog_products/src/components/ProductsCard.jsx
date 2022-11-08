@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import imageproduct1 from '../assets/img/cienanosdesoledad.jpg';
 import icons from '../assets/icons/bt_add_to_cart.svg';
 import '../styles/app.css';
 
@@ -22,21 +21,23 @@ useEffect(()=>{
         products.map((products , index)=>{
           return (
            <div class="product-card">
-             <img src={products.image} alt="" />
+              <img src={products.image} alt="" />
                <div class="product-info">
                 <p>{products.name}</p>
                 <p>{products.Description}</p>
-                <div>
+               <div>
           </div>
           <figure>
+              <img src={icons} alt="card" />         
               <img src={icons} alt="card" />
           </figure>
          </div>
       </div>)
         })
-
     }
     
+
+
     </>   
   );
 };

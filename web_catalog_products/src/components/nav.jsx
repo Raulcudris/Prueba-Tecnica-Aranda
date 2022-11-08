@@ -2,6 +2,7 @@ import React from 'react';
 import menu from '../assets/icons/icon_menu.svg';
 import shopping_cart from '../assets/icons/icon_shopping_cart.svg';
 import logo from '../assets/logos/Logo-aranda.svg';
+import '../components/ProductsCard';
 
 import '../styles/app.css';
 const Nav = () => {
@@ -20,7 +21,9 @@ const Nav = () => {
                 </li>
                 <br />
                 <li>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Buscar Producto.."/>
+                    <input type="email" class="form-control" 
+                           id="exampleInputEmail1" aria-describedby="emailHelp" 
+                           placeholder="Buscar Producto.."/>
                 </li>
             </ul>
         </div>

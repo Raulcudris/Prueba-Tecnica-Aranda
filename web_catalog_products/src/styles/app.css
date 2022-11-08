@@ -99,8 +99,8 @@ nav{
     margin: 0;
 }
 .product-info figure img{
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
 }
 .product-info div p:nth-child(1) {
     font-weight: bold;
