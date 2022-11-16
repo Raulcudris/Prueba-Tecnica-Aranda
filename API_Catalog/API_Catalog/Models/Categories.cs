@@ -14,8 +14,11 @@ namespace API_Catalog.Models
         public int Categ_Id { get; set; }
 
         [Required(ErrorMessage = "Requerido")]
-        [StringLength(100)]
+        [StringLength(200)]
         public string Name { get; set; }
+        [Required(ErrorMessage = "Requerido")]
+        [StringLength(200)]
+        public string Description { get; set; }
 
     }
 }

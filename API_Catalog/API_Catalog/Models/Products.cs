@@ -17,7 +17,7 @@ namespace API_Catalog.Models
         public string Name { get; set; }
 
         [Required(ErrorMessage = "Requerido")]
-        [StringLength(100)]
+        [StringLength(200)]
         public string Description { get; set; }
 
         [Required(ErrorMessage = "Requerido")]

@@ -8,5 +8,6 @@ namespace API_Catalog.Dtos
     public class CategoriesDtos
     {
         public string Name { get; set; }
+        public string Description { get; set; }
     }
 }

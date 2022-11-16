@@ -16,7 +16,7 @@ useEffect(()=>{
 },[]);
 
   return (
-    <>
+    <>     
     {!products ? 'Cargando...' : 
         products.map((products , index)=>{
           return (
@@ -34,10 +34,7 @@ useEffect(()=>{
          </div>
       </div>)
         })
-    }
-    
-
-
+    }  
     </>   
   );
 };

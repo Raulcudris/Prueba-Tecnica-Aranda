@@ -1,9 +1,9 @@
-import Nav from "./components/nav";
 import Products from "./pages/Products";
+import Header from "./components/Header";
 function App() {
   return (
     <div>
-      <Nav/>  
+      <Header/>
       <Products />
     </div>
   );
